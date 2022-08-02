@@ -1,0 +1,6 @@
+lifetime obj
+polimorfism
+solid
+http post get delete
+clean arhitec
+jwt
