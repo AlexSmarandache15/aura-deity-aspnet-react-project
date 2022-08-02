@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ltqp4mKWJa5wZ0msK5BQeso2jOjMYT6kNCJD/oriBMBbmVKDBtvtd0yS8lBahAsgO0wU5ITwtewycOsbK5ylvw==",
+  "dgSpecHash": "fNRPlNs4uobJjZQdFauLXB2TljhQBCVSejlVYVgK6kbSlNQSmN1zXhlsuCCm7JaA8Wx4ND6egT5FSir1UsFNzA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\AlexandruSmarandache\\Desktop\\RowebPractice\\AuraDaty\\Logic\\Logic.csproj",
+  "projectFilePath": "C:\\Users\\AlexandruSmarandache\\Desktop\\RowebPractice\\AuraDeity\\Logic\\Logic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AlexandruSmarandache\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\AlexandruSmarandache\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.7\\microsoft.entityframeworkcore.6.0.7.nupkg.sha512",
@@ -22,6 +22,7 @@
     "C:\\Users\\AlexandruSmarandache\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.22.0\\microsoft.identitymodel.jsonwebtokens.6.22.0.nupkg.sha512",
     "C:\\Users\\AlexandruSmarandache\\.nuget\\packages\\microsoft.identitymodel.logging\\6.22.0\\microsoft.identitymodel.logging.6.22.0.nupkg.sha512",
     "C:\\Users\\AlexandruSmarandache\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.22.0\\microsoft.identitymodel.tokens.6.22.0.nupkg.sha512",
+    "C:\\Users\\AlexandruSmarandache\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\AlexandruSmarandache\\.nuget\\packages\\npgsql\\6.0.5\\npgsql.6.0.5.nupkg.sha512",
     "C:\\Users\\AlexandruSmarandache\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\6.0.5\\npgsql.entityframeworkcore.postgresql.6.0.5.nupkg.sha512",
     "C:\\Users\\AlexandruSmarandache\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",

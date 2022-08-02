@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AlexandruSmarandache\\Desktop\\RowebPractice\\AuraDaty\\Entities\\DataAccess.csproj": {}
+    "C:\\Users\\AlexandruSmarandache\\Desktop\\RowebPractice\\AuraDeity\\Entities\\DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AlexandruSmarandache\\Desktop\\RowebPractice\\AuraDaty\\Entities\\DataAccess.csproj": {
+    "C:\\Users\\AlexandruSmarandache\\Desktop\\RowebPractice\\AuraDeity\\Entities\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AlexandruSmarandache\\Desktop\\RowebPractice\\AuraDaty\\Entities\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\AlexandruSmarandache\\Desktop\\RowebPractice\\AuraDeity\\Entities\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\AlexandruSmarandache\\Desktop\\RowebPractice\\AuraDaty\\Entities\\DataAccess.csproj",
+        "projectPath": "C:\\Users\\AlexandruSmarandache\\Desktop\\RowebPractice\\AuraDeity\\Entities\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\AlexandruSmarandache\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AlexandruSmarandache\\Desktop\\RowebPractice\\AuraDaty\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\AlexandruSmarandache\\Desktop\\RowebPractice\\AuraDeity\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\AlexandruSmarandache\\AppData\\Roaming\\NuGet\\NuGet.Config",
