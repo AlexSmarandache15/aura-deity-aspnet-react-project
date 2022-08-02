@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuraDeity", "AuraDaty\AuraDeity.csproj", "{4E61B621-6175-4DF6-9FE3-11F8AC46A677}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuraDeity", "AuraDeity\AuraDeity.csproj", "{4E61B621-6175-4DF6-9FE3-11F8AC46A677}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{EDE4985B-2981-47C3-A97C-DAE80B98B511}"
 EndProject
