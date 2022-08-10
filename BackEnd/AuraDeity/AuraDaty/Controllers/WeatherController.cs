@@ -55,7 +55,7 @@ namespace AuraDeity.Controllers
         [HttpPost("lastsearch")]
         public async Task<IActionResult> GetLastSearch(UserSearchModel user)
         {
-            var processResult = WeatherAPI.GetLastCitySearchedByUser(user.Username);
+            var processResult = await WeatherAPI.GetLastCitySearchedByUser(user.Username);
 
             if (string.IsNullOrEmpty(processResult))
             {

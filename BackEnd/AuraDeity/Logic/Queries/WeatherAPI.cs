@@ -104,9 +104,12 @@ namespace Logic.Queries
             return b.ToString();
         }
 
-        public string GetLastCitySearchedByUser(string username)
+        public async Task<string> GetLastCitySearchedByUser(string username)
         {
-           var infos = _auraDeityContext.WeatherInfos.ToListAsync().Result;
+           var infos = 
+                await _auraDeityContext.WeatherInfos.Where(info => username.Equals(
+                    info.Username)).ToListAsync();
+            
            var size = infos.Count();
            var ans = "";
            var maxDate = DateTime.MinValue;

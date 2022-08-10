@@ -13,6 +13,6 @@ namespace Interfaces.Queries
 
         Task<string> SaveWeatherSearch(string city, string username);
 
-        string GetLastCitySearchedByUser(string username);
+        Task<string> GetLastCitySearchedByUser(string username);
     }
 }
