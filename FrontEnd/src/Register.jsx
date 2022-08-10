@@ -33,6 +33,7 @@ function Register() {
         }).then(async (response) => {
             if(response.ok === true) {
                 var token = await response.json();
+                localStorage.setItem('token', token);
                 console.log("Ok");
             }  else {
                 console.log("Error");

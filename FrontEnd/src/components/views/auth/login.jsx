@@ -30,6 +30,7 @@ const LoginForm = ({
 	};
 
 	return (<Fragment>		
+		<div className="weather">
 	<div className="form-box">
 		<div className="header-text">
 			Login Form
@@ -40,6 +41,7 @@ const LoginForm = ({
 		<label htmlFor="terms"></label><span>Agree with <a href="#">Terms and Conditions</a></span> 
 		<button  onClick={onSubmit}>Login</button>
 		<span>Don't have an account? <button onClick={() => navigateTo("/signup")}><a href="#">SignUp</a></button></span> 
+	</div>
 	</div>
 	</Fragment>);
 }

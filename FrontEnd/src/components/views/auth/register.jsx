@@ -9,7 +9,8 @@ const RegisterForm = ({
     
 	const navigateTo = useNavigate();
 
-	return (<Fragment>		
+	return (<Fragment>	
+	<div className="weather">	
 	<div className="form-box">
 		<div className="header-text">
 			SignUp Form
@@ -20,6 +21,7 @@ const RegisterForm = ({
 		<label htmlFor="terms"></label><span>Agree with <a href="#">Terms and Conditions</a></span> 
 		<button  onClick={onSubmit}>SignUp</button>
 		<span>Aldready have an account? <button onClick={() => navigateTo("/login")}><a href="#">Login</a></button></span> 
+	</div>
 	</div>
 	</Fragment>);
 }
