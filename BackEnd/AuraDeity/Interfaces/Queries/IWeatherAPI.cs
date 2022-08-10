@@ -10,5 +10,9 @@ namespace Interfaces.Queries
     public interface IWeatherAPI
     {
         Task<Weather> GetWeatherDataByCity(string city);
+
+        Task<string> SaveWeatherSearch(string city, string username);
+
+        string GetLastCitySearchedByUser(string username);
     }
 }

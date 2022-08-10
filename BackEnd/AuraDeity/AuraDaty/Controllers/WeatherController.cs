@@ -1,5 +1,7 @@
 ﻿using Interfaces.Queries;
+using Logic.Queries;
 using Microsoft.AspNetCore.Mvc;
+using Models.Authentification;
 using Models.Weather;
 
 namespace AuraDeity.Controllers
@@ -25,7 +27,7 @@ namespace AuraDeity.Controllers
         {
             var weather = await WeatherAPI.GetWeatherDataByCity(weatherSearchDto.City);
 
-            return weather != null
+            return weather.Count > 0
                 ? this.Ok(
                     new WeatherResponse()
                     {
@@ -36,5 +38,32 @@ namespace AuraDeity.Controllers
                     })
                : this.Ok(weather);
         }
+
+        [HttpPost("searchsave")]
+        public async Task<IActionResult> SaveWeatherSearch(WeatherSearchInfoDto info)
+        {
+            var processResult = await WeatherAPI.SaveWeatherSearch(info.City, info.Username);
+
+            if (string.IsNullOrEmpty(processResult))
+            {
+                return BadRequest();
+            }
+
+            return Ok(processResult);
+        }
+
+        [HttpPost("lastsearch")]
+        public async Task<IActionResult> GetLastSearch(UserSearchModel user)
+        {
+            var processResult = WeatherAPI.GetLastCitySearchedByUser(user.Username);
+
+            if (string.IsNullOrEmpty(processResult))
+            {
+                return BadRequest();
+            }
+
+            return Ok(processResult);
+        }
     }
+
 }

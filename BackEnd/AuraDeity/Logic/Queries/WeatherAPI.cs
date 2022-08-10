@@ -1,4 +1,6 @@
-﻿using Interfaces.Queries;
+﻿using DataAccess;
+using Interfaces.Queries;
+using Microsoft.EntityFrameworkCore;
 using Models.Weather;
 using Newtonsoft.Json;
 using System;
@@ -12,14 +14,17 @@ namespace Logic.Queries
 {
     public class WeatherAPI : IWeatherAPI
     {
+        private readonly AuraDeityContext _auraDeityContext;
+
         private const string OpenWeatherBaseApiUrl = "http://api.openweathermap.org/data/2.5/find?q=";
         private const string OpenWeatherApiUrlSettings = "&units=metric&appid=30b1f0938ee741c62e983dabb1af8f63";
 
         /// <summary>
         /// Initializes a new instance of the <see cref="WeatherAPI"/> class.
         /// </summary>
-        public WeatherAPI()
+        public WeatherAPI(AuraDeityContext auraDeityContext)
         {
+            this._auraDeityContext = auraDeityContext;
             SetupHttpClientSettingsCall();
         }
 
@@ -85,6 +90,37 @@ namespace Logic.Queries
             stringBuilder.Append(OpenWeatherApiUrlSettings);
 
             return stringBuilder.ToString();
+        }
+
+        public async Task<string> SaveWeatherSearch(string city, string username)
+        {
+             var a = await _auraDeityContext.WeatherInfos.AddAsync(new DataAccess.Entities.SearchWeatherInfo
+            {
+                City = city,
+                Username = username,
+                QuerydateTime = DateTime.Now
+            });
+            var b = await _auraDeityContext.SaveChangesAsync();
+            return b.ToString();
+        }
+
+        public string GetLastCitySearchedByUser(string username)
+        {
+           var infos = _auraDeityContext.WeatherInfos.ToListAsync().Result;
+           var size = infos.Count();
+           var ans = "";
+           var maxDate = DateTime.MinValue;
+            for(int i = 0; i < size; i++)
+            {
+                var date = infos[i].QuerydateTime;
+                if(date.Value.CompareTo(maxDate)  > 0 && username.Equals(infos[i].Username))
+                {
+                    maxDate = date.Value;
+                    ans = infos[i].City;
+                }
+            }
+                
+           return ans;
         }
     }
 }

@@ -16,6 +16,8 @@ namespace DataAccess
 
         public DbSet<UserAuthEntity> UserAuths { get; set; }
 
+        public DbSet<SearchWeatherInfo> WeatherInfos { get; set; }
+
         public DbSet<WeatherDataEntity> WeatherDatas { get; set; }
     }
 }
